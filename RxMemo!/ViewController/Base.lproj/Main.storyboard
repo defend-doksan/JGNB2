@@ -26,7 +26,7 @@
         <!--새 메모-->
         <scene sceneID="g2t-V0-JNM">
             <objects>
-                <viewController id="44I-yZ-xLe" sceneMemberID="viewController">
+                <viewController id="44I-yZ-xLe" customClass="MemoComposeViewController" customModule="RxMemo_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fF7-BO-1Mc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--메모 목록-->
         <scene sceneID="hk6-82-utn">
             <objects>
-                <viewController id="6qJ-lD-UP1" sceneMemberID="viewController">
+                <viewController id="6qJ-lD-UP1" customClass="MemoListViewController" customModule="RxMemo_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qDR-tP-jpb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,12 +55,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lei-2r-j0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="938"/>
+            <point key="canvasLocation" x="923" y="938"/>
         </scene>
         <!--메모 보기-->
         <scene sceneID="vC9-hd-f2q">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="dit-5z-j52" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="dit-5z-j52" customClass="MemoDetailViewController" customModule="RxMemo_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFW-5n-ihc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,6 +10,9 @@
 		54A7272226627EAF0085E3EC /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7272126627EAF0085E3EC /* Memo.swift */; };
 		54A7272526627F790085E3EC /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7272426627F790085E3EC /* MemoStorageType.swift */; };
 		54A7272A266280400085E3EC /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A72729266280400085E3EC /* MemoryStorage.swift */; };
+		54A7272E266285C70085E3EC /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7272D266285C70085E3EC /* MemoListViewController.swift */; };
+		54A72731266285EB0085E3EC /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A72730266285EB0085E3EC /* MemoDetailViewController.swift */; };
+		54A72734266286080085E3EC /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A72733266286080085E3EC /* MemoComposeViewController.swift */; };
 		54FB59C726623F15005209DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59C626623F15005209DE /* AppDelegate.swift */; };
 		54FB59C926623F15005209DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59C826623F15005209DE /* SceneDelegate.swift */; };
 		54FB59CE26623F15005209DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB59CC26623F15005209DE /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 		54A7272126627EAF0085E3EC /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		54A7272426627F790085E3EC /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		54A72729266280400085E3EC /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		54A7272D266285C70085E3EC /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		54A72730266285EB0085E3EC /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		54A72733266286080085E3EC /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
 		54FB59C326623F15005209DE /* RxMemo!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxMemo!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FB59C626623F15005209DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FB59C826623F15005209DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 			children = (
 				54FB59CC26623F15005209DE /* Main.storyboard */,
 				54FB59D426623F17005209DE /* LaunchScreen.storyboard */,
+				54A7272D266285C70085E3EC /* MemoListViewController.swift */,
+				54A72730266285EB0085E3EC /* MemoDetailViewController.swift */,
+				54A72733266286080085E3EC /* MemoComposeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -271,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FB59C726623F15005209DE /* AppDelegate.swift in Sources */,
+				54A72731266285EB0085E3EC /* MemoDetailViewController.swift in Sources */,
 				54A7272526627F790085E3EC /* MemoStorageType.swift in Sources */,
 				54FB59C926623F15005209DE /* SceneDelegate.swift in Sources */,
 				54FB59D126623F15005209DE /* RxMemo_.xcdatamodeld in Sources */,
 				54A7272226627EAF0085E3EC /* Memo.swift in Sources */,
+				54A7272E266285C70085E3EC /* MemoListViewController.swift in Sources */,
+				54A72734266286080085E3EC /* MemoComposeViewController.swift in Sources */,
 				54A7272A266280400085E3EC /* MemoryStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
