@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		54FB59C726623F15005209DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59C626623F15005209DE /* AppDelegate.swift */; };
 		54FB59C926623F15005209DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59C826623F15005209DE /* SceneDelegate.swift */; };
-		54FB59CB26623F15005209DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59CA26623F15005209DE /* ViewController.swift */; };
 		54FB59CE26623F15005209DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB59CC26623F15005209DE /* Main.storyboard */; };
 		54FB59D126623F15005209DE /* RxMemo_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54FB59CF26623F15005209DE /* RxMemo_.xcdatamodeld */; };
 		54FB59D326623F17005209DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FB59D226623F17005209DE /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		54FB59C326623F15005209DE /* RxMemo!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxMemo!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FB59C626623F15005209DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FB59C826623F15005209DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54FB59CA26623F15005209DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54FB59CD26623F15005209DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54FB59D026623F15005209DE /* RxMemo_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo_.xcdatamodel; sourceTree = "<group>"; };
 		54FB59D226623F17005209DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +48,44 @@
 				259FDA2D7D5A589B38E306C9 /* Pods-RxMemo!.debug.xcconfig */,
 				256A93777B5DAF775B443C9C /* Pods-RxMemo!.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		54A7271B26627CC30085E3EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54A7271C26627CD70085E3EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54FB59CC26623F15005209DE /* Main.storyboard */,
+				54FB59D426623F17005209DE /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		54A7271D26627CEC0085E3EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54A7271E26627D010085E3EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		54A7271F26627D150085E3EC /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		54FB59BA26623F15005209DE = {
@@ -75,12 +109,14 @@
 		54FB59C526623F15005209DE /* RxMemo! */ = {
 			isa = PBXGroup;
 			children = (
+				54A7271F26627D150085E3EC /* Scene */,
+				54A7271E26627D010085E3EC /* Service */,
+				54A7271D26627CEC0085E3EC /* ViewModel */,
+				54A7271C26627CD70085E3EC /* ViewController */,
+				54A7271B26627CC30085E3EC /* Model */,
 				54FB59C626623F15005209DE /* AppDelegate.swift */,
 				54FB59C826623F15005209DE /* SceneDelegate.swift */,
-				54FB59CA26623F15005209DE /* ViewController.swift */,
-				54FB59CC26623F15005209DE /* Main.storyboard */,
 				54FB59D226623F17005209DE /* Assets.xcassets */,
-				54FB59D426623F17005209DE /* LaunchScreen.storyboard */,
 				54FB59D726623F17005209DE /* Info.plist */,
 				54FB59CF26623F15005209DE /* RxMemo_.xcdatamodeld */,
 			);
@@ -209,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FB59CB26623F15005209DE /* ViewController.swift in Sources */,
 				54FB59C726623F15005209DE /* AppDelegate.swift in Sources */,
 				54FB59C926623F15005209DE /* SceneDelegate.swift in Sources */,
 				54FB59D126623F15005209DE /* RxMemo_.xcdatamodeld in Sources */,
