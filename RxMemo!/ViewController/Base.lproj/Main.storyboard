@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -30,15 +31,39 @@
                     <view key="view" contentMode="scaleToFill" id="fF7-BO-1Mc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQd-zf-mxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jx4-b2-9ub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MQd-zf-mxZ" secondAttribute="bottom" id="3hK-eg-rvc"/>
+                            <constraint firstItem="MQd-zf-mxZ" firstAttribute="leading" secondItem="jx4-b2-9ub" secondAttribute="leading" id="8rc-tK-ORG"/>
+                            <constraint firstItem="MQd-zf-mxZ" firstAttribute="top" secondItem="fF7-BO-1Mc" secondAttribute="top" id="ikX-ed-exI"/>
+                            <constraint firstItem="MQd-zf-mxZ" firstAttribute="trailing" secondItem="jx4-b2-9ub" secondAttribute="trailing" id="p6d-GV-ccW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="Kg9-0R-Pch"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="Kg9-0R-Pch">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="r57-Pf-iBV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oYL-7y-s0u"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="r57-Pf-iBV" id="0ev-f3-GbG"/>
+                        <outlet property="contentTextView" destination="MQd-zf-mxZ" id="KYR-nf-xyx"/>
+                        <outlet property="saveButton" destination="oYL-7y-s0u" id="gqV-Pv-A1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkR-uz-jiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="194"/>
+            <point key="canvasLocation" x="2330.434782608696" y="193.52678571428569"/>
         </scene>
         <!--메모 목록-->
         <scene sceneID="hk6-82-utn">
@@ -149,6 +174,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
